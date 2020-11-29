@@ -68,10 +68,10 @@ export class SectionThree extends Component {
         return (
             <div>
              <div className="container mt-5 shops">
-                 <p className="text-center">Enjoy your FREE SPC Rewards Booklet with any SPC Lubricant or servicing package purchased. <br /> Available at all SPC Service Stations, SPC SpeedyCare Auto Service Centres, participating independent <br /> workshops,  <a href="#" >Lazada</a>, <a href="#" >Shopee</a> and <a href="#" >Qoo10</a>.</p>
+                 <p className="text-center font-large">Enjoy your FREE SPC Rewards Booklet with any SPC Lubricant or servicing package purchased. <br /> Available at all SPC Service Stations, SPC SpeedyCare Auto Service Centres, participating independent <br /> workshops,  <a href="https://www.lazada.sg/shop/singapore-petroleum-company-limited" >Lazada</a>, <a href="https://shopee.sg/spclubricants" >Shopee</a> and <a href="https://www.qoo10.sg/shop/spclubricants" >Qoo10</a>.</p>
              </div>
             
-             <div className="container ">
+             <div className="container my-4">
              { this.state.central && <img src="../img/maps/central.png" alt="" className="img-fluid map-img" /> }
              { this.state.north && <img src="../img/maps/north.png" alt="" className="img-fluid map-img" /> }
              { this.state.south && <img src="../img/maps/south.png" alt="" className="img-fluid map-img" /> }
@@ -79,27 +79,27 @@ export class SectionThree extends Component {
              { this.state.west && <img src="../img/maps/west.png" alt="" className="img-fluid map-img" /> }
             </div>
 
-            <div className="container mt-4">
-                <div className="row">
-                    <div className="col">
+            <div className="container-md mt-4">
+                <div className="row buttons-group">
+                    <div className="col text-center ">
                          <button type="button" className={`${activeCentral} btn btn-outline-info`} onClick={()=>this.mapChange("central")}>Central</button>
                     </div>
-                    <div className="col">
+                    <div className="col text-center">
                          <button type="button" className={`${activeNorth} btn btn-outline-info`} onClick={()=>this.mapChange("north")}>North</button>
                     </div>
-                    <div className="col">
+                    <div className="col text-center">
                          <button type="button" className={`${activeSouth} btn btn-outline-info`} onClick={()=>this.mapChange("south")}>South</button>
                     </div>
-                    <div className="col">
+                    <div className="col text-center">
                          <button type="button" className={`${activeEast} btn btn-outline-info`} onClick={()=>this.mapChange("east")}>East</button>
                     </div>
-                    <div className="col">
+                    <div className="col text-center">
                          <button type="button" className={`${activeWest} btn btn-outline-info`} onClick={()=>this.mapChange("west")}>West</button>
                     </div>
                 </div>
             </div>
 
-            <div className="pt-5">
+            <div className="pt-3">
             { this.state.central &&
                 <table className="table table-striped" id="central-locations">
                     <thead>
@@ -374,7 +374,7 @@ export class SectionThree extends Component {
                         <td className="right-space"></td>
                         </tr>
                         <tr>
-                        <th className="left-space right-border">SPC Changi *Closed for Upgrading</th>
+                        <th className="left-space right-border">SPC Changi <span className="font-small">*Closed for upgrading</span></th>
                         <td className="right-border">337 Changi Road, Singapore 419810</td>
                         <td className="right-border">6741-0869</td>
                         <td className="right-border"><img src="../img/check.png" alt="" className="table-check" /></td>

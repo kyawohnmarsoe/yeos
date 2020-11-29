@@ -16,10 +16,10 @@ function Nav() {
                     </li>
         
                     <li className="nav-item">
-                        <a className="nav-link" href="#"><img src="../img/instagram.svg" alt="" className="social-icon" /></a>
+                        <a className="nav-link" href="https://www.instagram.com/spclubricants/?hl=en"><img src="../img/instagram.svg" alt="" className="social-icon" /></a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#"><img src="../img/facebook.svg" alt="" className="social-icon" /></a>
+                        <a className="nav-link" href="https://www.facebook.com/spclubricants"><img src="../img/facebook.svg" alt="" className="social-icon" /></a>
                     </li>
                     </ul>
                     
