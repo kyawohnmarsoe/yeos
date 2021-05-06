@@ -5,7 +5,6 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import BuyToJoin from './components/BuyToJoin';
 import ContactUs from './components/ContactUs';
-import Thankyou from './components/Thankyou';
 import DailyWinner from './components/DailyWinner';
 import HowToJoin from './components/HowToJoin';
 import Terms from './components/Terms';
@@ -17,7 +16,7 @@ function App() {
   return (
     <Router>
      <Nav/>
-     
+     <img src="assets/img/left.png" alt="Flowers" className=" yeo-flower"/>
        <Switch>
          <Route path="/" exact> <Home/> </Route>
          <Route path="/buy-to-join" > <BuyToJoin/> </Route>
@@ -29,6 +28,7 @@ function App() {
          <Route path="/profile"> <Profile/> </Route>
          <Route path="/submit"> <Submit/> </Route>
        </Switch>
+       
      <Footer/>
     </Router>
   );

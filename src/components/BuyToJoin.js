@@ -3,7 +3,7 @@ import React from 'react'
 const BuyToJoin = () => {
     return (
         <>
-            <img src="assets/img/left.png" alt="Flowers" className=" yeo-flower"/>
+           
             <section className="body-wapper">
             <div className="container">
                 <div className=" yeo-signup "> 

@@ -51,7 +51,6 @@ const DailyWinner = () => {
             </div>
             </section>
             <img src="assets/img/Background2.png" alt="" className="yeo-girl "/>
-            
         </>
     )
 }
