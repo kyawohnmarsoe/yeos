@@ -10,6 +10,8 @@ import DailyWinner from './components/DailyWinner';
 import HowToJoin from './components/HowToJoin';
 import Terms from './components/Terms';
 import SignUp from './components/SignUp';
+import Profile from './components/Profile';
+import Submit from './components/Submit';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
          <Route path="/how-to-join" > <HowToJoin/> </Route>
          <Route path="/terms-and-conditions"> <Terms/> </Route>
          <Route path="/signup"> <SignUp/> </Route>
+         <Route path="/profile"> <Profile/> </Route>
+         <Route path="/submit"> <Submit/> </Route>
        </Switch>
      <Footer/>
     </Router>
