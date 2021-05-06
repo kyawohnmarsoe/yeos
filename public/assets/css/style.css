@@ -1,0 +1,641 @@
+@font-face {
+    font-family: MarkerFelt;
+    src: url('../font/MarkerFelt.ttc');
+}
+@font-face {
+    font-family: JamesFajardo;
+    src: url('../font/JamesFajardo.ttf');
+}
+@font-face {
+    font-family: chinese;
+    src: url('../font/chinese.ttf');
+}
+@font-face {
+    font-family: Roboto;
+    src: url('../font/Roboto-Medium.ttf');
+}
+* {
+    box-sizing: border-box;
+}
+.dot{
+    width:15px;
+    height:15px;
+    position:absolute;
+    background: url('../img/3.png');
+    /* background: url('./assets/img/right.png'); */
+    background-size: 100% 100%;
+    }
+html, body{
+    font-family: Roboto;
+    font-size:14px;
+    position: relative;
+    background:url('../img/Background.png');
+    background-size: cover;
+    color:#603913;
+    width:100%;
+    /* height: 100%; */
+    margin:0;
+    padding-top:0;
+    /* min-height:1100px; */
+}
+.section-background{
+    background:url('../img/Background.png');
+}
+.section3-background{
+    background:url('../img/Group19.png');
+}
+.body-wapper{
+    padding-top:150px;
+    position: relative;
+}
+.body-wapper2{
+    padding-top:150px;
+    position: relative;
+}
+.bg-brown{
+    background:#603913;
+}
+.text-brown{
+    color:#603913;
+}
+.yeo-logo{
+    width:100px;
+    margin-bottom:-40px;
+    margin-left:50px;
+}
+.btn-outline-white{
+    color: #fff;
+    border-color: #fff;
+    border-radius: 15px;
+}
+.text-yellow{
+    color:  #ccb703;
+}
+.text-green{
+    color:#88bd02;
+}
+.text-red{
+    color:#e42426;
+}
+.btn-brown{
+    background:#603913;
+    color: #fff;
+    border-radius: 25px;
+}
+.btn-brown:hover{
+    color:  #ccb703;
+}
+.signup-btn{
+    min-width: 200px;
+    font-size: 20px;
+}
+.btn{
+    padding:0px 15px;
+}
+.btn-outline-white:hover{
+    color: #ccb703;
+    border-color: #ccb703;
+}
+.yeo-navbar{
+    position: absolute;
+    /* top:0;
+    left:0;
+    right:0; */
+    width: 100%;
+    z-index:3;
+}
+.yeo-navbar-mobile{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    z-index:3;
+}
+.sub-navbar ul{
+    display: inline;
+    padding:10px 0;
+}
+.sub-navbar ul li {
+    display: inline-block;
+    padding:5px 10px;
+}
+.sub-navbar ul li a{
+    display: block;
+}
+.sub-navbar ul li a.active{
+    border-bottom:2px solid #603913;
+}
+a{
+    color:#603913;
+}
+a:hover {
+    text-decoration: none;
+    color: #ccb703;
+}
+.yeo-signup-wapper{
+    position: absolute;
+    top:90px;
+    left:0;
+    right:0;
+    width: 100%;
+    z-index:3;
+}
+.yeo-signup{
+    width:100%;
+    margin:auto;
+}
+
+.form-control{
+    background:transparent !important;
+    border-color:#603913;
+    border-radius: 15px;
+}
+input:focus{
+    outline: none;
+    border-color: #ccb703 !important;
+    box-shadow: 0 0 10px #ccb703 !important;
+    background:transparent !important;
+}
+
+
+label small a{
+    text-decoration: underline;
+}
+
+.yeo-singapore{
+    position: absolute;
+    top:100px;
+    left:50%;
+    transform: translate(-50%,0);
+    z-index: 1;
+    width:100%;
+}
+.yeo-girl,.yeo-girl2{
+    width:100%;
+}
+.yeo-no1{
+    position: absolute;
+    bottom:100px;
+    right:25%;
+}
+.yeo-soybean{
+    /* width:200px; */
+    position: absolute;
+    bottom:120px;
+    right:30%;
+}
+.yeo-footer-wapper{
+    position: absolute;
+    bottom:0;
+    z-index: 2;
+    width:100%;
+}
+.yeo-footer{
+    color:#fff;
+    font-size: 11px;
+    padding:10px 0;
+}
+.yeo-footer a{
+    color:#fff;
+}
+.footer-social{
+    width: 30px;
+    margin:0px 10px;
+}
+.yeo-flower-wapper{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    z-index:1;
+}
+.yeo-flower{
+    width: 165px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.yeo-flower2{
+    /* width: 165px; */
+    position: absolute;
+    top:0;
+    left:0;
+}
+.yeo-flower:hover{
+    filter: brightness(110%);
+}
+.yeo-flower-right{
+    width: 70px;
+    position: absolute;
+    top:20%;
+    right:20%;
+}
+.yeo-leave-right{
+    width: 150px;
+    position: absolute;
+    top:0;
+    right:20%;
+}
+.yeo-logos{
+    width:80px;
+}
+.yeo-upload-wapper{
+    position: absolute;
+    top:110px;
+    right:0;
+    /* left:0;
+    right:0;
+    width: 100%; */
+    z-index:4;
+}
+.yeo-upload{
+    position: relative;
+    width: 110px;
+    height: 110px;
+   float:right;
+   cursor: pointer;
+}
+.yeo-upload:hover {
+    filter: brightness(110%);
+}
+.submit-icon{
+    position: absolute;
+    z-index: 1;
+    width:100%;
+   
+}
+.upload-icon{
+    position: absolute;
+    z-index: 2;
+    width:27px;
+   left:25px;
+   top:20px;
+   
+}
+.upload-text{
+    position: absolute;
+    z-index: 2;
+    font-size:7.5px;
+    color:#fff;
+    left:9px;
+   top:50px;
+}
+
+/* mobile  */
+.yeo-menu{
+    width: 30px;
+    margin:10px 0;
+}
+.modal-header{
+    border:0;
+}
+.modal-dialog{
+    margin:0;
+}
+.modal-content{
+    background:#f8cc65;
+    width: 300px;
+    min-height: 100vh;
+}
+
+.modal-body {
+    padding:0;
+}
+.modal-body ul{
+    margin:0;
+    padding:0;
+}
+.modal-body ul li{
+    list-style-type: none;
+}
+.modal-body ul li a{
+    line-height: 40px;
+    font-weight: bold;
+    display:block;
+    padding-left:10%;
+}
+.modal-body ul li a:hover{
+    background: #603913;
+}
+.modal-header .close{
+    font-size:30px;
+    color: #603913;
+    opacity: 1;
+}
+.step-background{
+    background:#603913;
+    border-radius: 50%;
+    width:100px;
+    height: 100px;
+    color:#fff;
+    font-size: 9px;
+}
+
+.step-icon{
+    width:40px;
+}
+.step-center{
+   padding-top:20px
+}
+
+.partners-img{
+    width:170px;
+    padding:10px 10px;
+}
+.pdrinks-wapper{
+    width: 100%;
+    margin:auto;
+}
+.button-icon{
+  width: 18px;
+  margin-right:5px;
+}
+.no-of-chance{
+    width:80px;
+    border-bottom:1px solid #603913;
+    display:block;
+}
+
+table {
+    border-collapse: collapse;
+    /* border-radius: 1em; */
+    overflow: hidden;
+    border:2px solid;
+  }
+.table{
+    color: #603913;
+}
+thead{
+    background: #603913;
+    color:#fff;
+    text-align: center;
+}
+.table thead th, .table td, .table th{
+    border:none;
+}
+.table tr td{
+    border:2px solid;
+}
+
+.tnc-wapper{
+    overflow-y:scroll;
+    height:500px;
+}
+
+/* width */
+.tnc-wapper::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent; 
+    border-radius: 10px;
+    border:1px solid;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #603913;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #603913;
+  }
+
+
+
+ /* Landing Page   */
+ .two-steps{
+    /* width:300px; */
+    position: absolute;
+    bottom:20px;
+    left:50%;
+    transform: translate(-50%,0);
+}
+ul.yeo-landing{
+    margin:0;
+    padding:0;
+    font-family: MarkerFelt;
+    font-size:16px;
+    opacity: 0.7;
+}
+ul li{
+    list-style: none;
+}
+ul.list-style-flower1 li::before{
+    content: "";
+    width:15px;
+    height:15px;
+    display:inline-block;
+    background-size:cover;
+    background-image: url('../img/right.png');
+}
+.list-flower{
+    width:20px;
+    margin-right:10px;
+}
+.section-header{
+    font-family: JamesFajardo;
+    font-size:40px;
+    opacity: 0.5;
+}
+.landing-button{
+    position: absolute;
+    bottom:30px;
+    z-index:3;
+    right:30%;
+}
+.landing-button2{
+    position: absolute;
+    bottom:90px;
+    right:30%;
+    z-index:3;
+}
+.landing-win{
+    width: 80%;
+    margin:auto;
+}
+.logos-wapper{
+    width:300px;
+}
+
+@media (max-width: 575.98px){
+    .landing-button2{
+        bottom:135px;
+        left:31%;
+        right:0;
+        transform:translate(-25%,0);
+    }
+    .step-background{
+        width:80px;
+        height: 80px;
+    }
+    .step-icon{
+        width: 25px;
+    }
+    .signup-btn{
+        font-size:14px;
+    }
+    
+    .yeo-soybean{
+        width: 100px;
+        bottom:145px;
+        right:16%;
+    }
+    .yeo-leave-right{
+        width: 50px;
+        position: absolute;
+        top:0;
+        right:5%;
+    }
+  
+    .landing-button{
+        left:31%;
+        right:0;
+        transform:translate(-25%,0);
+        font-size:12px;
+    }
+    .logos-wapper{
+        width:150px;
+    }
+    .yeo-logos{
+        width:45px;
+    }
+    ul.yeo-landing{
+        font-size:10px;
+    }
+    .list-flower{
+        width: 13px;
+        margin-right: 5px;
+    }
+    .yeo-flower-right{
+        width: 30px;
+        position: absolute;
+        top:5%;
+        right:5%;
+    }
+    .body-wapper2{
+        padding-top:40px;
+       
+    }
+    .section-header{
+        font-size:30px;
+    }
+    .yeo-flower2{
+        width: 130px;
+        margin-left:-65px;
+    }
+    .yeo-no1{
+      width:140px;
+      right:7%;
+      bottom:145px;
+    }
+    .two-steps{
+        bottom: 10px;
+    }
+    .no-of-chance{
+        margin:auto;
+    }
+    .yeo-logo{
+        margin-left:0;
+    }
+    .yeo-girl{
+        margin-bottom:84px;
+    }
+    .yeo-footer{
+        line-height: 27px;
+        text-align: center;
+        padding:10px 0;
+    }
+   
+}
+@media (min-width: 576px){
+    .container{
+        max-width: 100%;
+    }
+    .yeo-footer{
+        line-height: 27px;
+        text-align: center;
+        padding:10px 0;
+    }
+   
+}
+
+@media (min-width: 768px){
+    
+    
+    .yeo-soybean{
+        width:130px;
+    }
+   
+    .yeo-no1{
+        width:200px;
+        bottom:80px;
+        right:15%;
+    }
+    .yeo-footer{
+        line-height: 60px;
+    }
+    .pdrinks-wapper{
+        width:700px;
+    }
+    .yeo-flower{
+        width: 200px;
+        left:10%;
+    }
+    .yeo-flower2{
+        width: 200px;
+        left:10%;
+    }
+
+    .yeo-signup{
+        width:600px;
+    }
+    .yeo-upload-wapper{
+        right:10%;
+    }
+   
+}
+@media (min-width: 992px){
+    .yeo-soybean{
+        width:170px;
+    }
+   
+    .container{
+        max-width: 750px;
+    }
+    .yeo-flower{
+        width: 225px;
+    }
+    .yeo-flower2{
+        width: 225px;
+    }
+}
+@media (min-width: 1200px){
+
+    .landing-win{
+        width: 100%;
+        margin:auto;
+    }
+    .yeo-soybean{
+        width:200px;
+    }
+    .yeo-no1{
+        width:270px;
+    }
+    .container{
+        max-width: 1140px;
+    }
+    .yeo-flower{
+        width: 300px;
+    }
+    .yeo-flower2{
+        width: 300px;
+    }
+  
+}

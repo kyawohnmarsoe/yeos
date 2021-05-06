@@ -1,25 +1,32 @@
 import React from 'react';
-import './App.css';
-import './style.css';
-import Nav from './component/Nav';
-import SectionOne from './component/SectionOne';
-import SectionTwo from './component/SectionTwo';
-import SectionThree from './component/SectionThree';
-import Footer from './component/Footer';
-import SectionFour from './component/SectionFour';
-import SectionFive from './component/SectionFive';
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import Footer from './components/Footer';
+import Nav from './components/Nav';
+import Home from './components/Home';
+import BuyToJoin from './components/BuyToJoin';
+import ContactUs from './components/ContactUs';
+import Thankyou from './components/Thankyou';
+import DailyWinner from './components/DailyWinner';
+import HowToJoin from './components/HowToJoin';
+import Terms from './components/Terms';
+import SignUp from './components/SignUp';
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <SectionOne />
-      <SectionTwo />
-      <SectionThree />
-      <SectionFour />
-      <SectionFive />
-      <Footer />
-    </div>
+    <Router>
+     <Nav/>
+     
+       <Switch>
+         <Route path="/" exact> <Home/> </Route>
+         <Route path="/buy-to-join" > <BuyToJoin/> </Route>
+         <Route path="/contact-us" > <ContactUs/> </Route>
+         <Route path="/daily-winner" > <DailyWinner/> </Route>
+         <Route path="/how-to-join" > <HowToJoin/> </Route>
+         <Route path="/terms-and-conditions"> <Terms/> </Route>
+         <Route path="/signup"> <SignUp/> </Route>
+       </Switch>
+     <Footer/>
+    </Router>
   );
 }
 
