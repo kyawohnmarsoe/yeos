@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Profile = () => {
     return (
@@ -10,25 +11,24 @@ const Profile = () => {
                         <div className="form-group row">
                             <label htmlFor="staticName" className="col-sm-6 col-form-label">Accumulated Receipts value:  $</label>
                             <div className="col-sm-6">
-                                <span className="no-of-chance">34</span>
+                                <span className="no-of-chance">340</span>
                             </div>
                         </div>
                         <div className="form-group row">
                         <label htmlFor="staticEmail" className="col-sm-6 col-form-label">Number of Lucky draw chances: </label>
                         <div className="col-sm-6">
-                        <span className="no-of-chance ">34</span>
+                        <span className="no-of-chance ">3</span>
                         </div>
                         </div>
-                    
-                    
-                    
                         <div className="text-center my-5">
-                        <button type="submit" className="btn btn-brown  signup-btn py-1 mx-2 my-2"><img src="assets/img/step2.png" alt="" className="button-icon"/> Submit Receipt</button>
+                        <Link to="/buy-to-join">
                         <button type="submit" className="btn btn-brown  signup-btn py-1 mx-2 my-2"><img src="assets/img/step1.png" alt="" className="button-icon"/> Buy to Join</button>
+                        </Link>
+                        <Link to="/submit">
+                        <button type="submit" className="btn btn-brown  signup-btn py-1 mx-2 my-2"><img src="assets/img/step2.png" alt="" className="button-icon"/> Submit Receipt</button>
+                        </Link>
                         </div>
-                
                     </div>
-                    
                 </div>
                 </section>
                 <img src="assets/img/Background2.png" alt="" className="yeo-girl "/>

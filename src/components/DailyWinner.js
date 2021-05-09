@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 const DailyWinner = () => {
     return (
         <>
@@ -13,37 +13,33 @@ const DailyWinner = () => {
                     <table className="table table-striped">
                         <thead>
                         <tr>
-                        
                             <th scope="col">Date</th>
                             <th scope="col">Winner Details</th>
-                        
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                        
-                            <td>Mark</td>
-                            <td>Otto</td>
-                        
+                            <td>1.1.2021</td>
+                            <td>Mark Otto</td>
                         </tr>
                         <tr>
-                        
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                        
+                            <td>2.1.2021</td>
+                            <td>Jacob Thornton</td>
                         </tr>
                         <tr>
-                        
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                        
+                            <td>3.1.2021</td>
+                            <td>Larry the Bird</td>
                         </tr>
                         </tbody>
                     </table>
                 
                     <div className="text-center my-5">
-                    <button type="submit" className="btn btn-brown  signup-btn py-1 mx-2 my-2"><img src="assets/img/step2.png" alt="" className="button-icon"/> Submit Receipt</button>
+                    <Link to="/buy-to-join">
                     <button type="submit" className="btn btn-brown  signup-btn py-1 mx-2 my-2"><img src="assets/img/step1.png" alt="" className="button-icon"/> Buy to Join</button>
+                    </Link>
+                    <Link to="/submit">
+                    <button type="submit" className="btn btn-brown  signup-btn py-1 mx-2 my-2"><img src="assets/img/step2.png" alt="" className="button-icon"/> Submit Receipt</button>
+                    </Link>
                     </div>
             
                 </div>

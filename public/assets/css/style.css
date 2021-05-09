@@ -63,6 +63,12 @@ html, body{
     margin-bottom:-40px;
     margin-left:50px;
 }
+.yeo-logo:hover {
+    filter: brightness(130%);
+}
+/* .step-background:hover{
+    filter: brightness(130%);
+} */
 .btn-outline-white{
     color: #fff;
     border-color: #fff;

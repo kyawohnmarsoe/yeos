@@ -6,12 +6,14 @@ const Nav = () => {
         <>
               <section className="yeo-upload-wapper d-none d-sm-block">
                 <div className="container">
+                <Link to="/submit">
                 <div className="yeo-upload">  
                     <img src="assets/img/submit-con.png" alt="" className="submit-icon"/>
                     <img src="assets/img/step2.png" alt="" className="upload-icon"/>
                     <span className="upload-text">Submit Receipt</span>
                 </div>
-            </div>
+                </Link>
+                </div>
             </section>
 
             <section className="yeo-navbar d-none d-sm-block">
@@ -19,7 +21,7 @@ const Nav = () => {
                 <div className="container">
                 <Link to="/"> <img src="assets/img/logo.png" alt="Logo" className="yeo-logo"/></Link>
                 <div className="float-right py-2">
-                    <div className="btn btn-outline-white" >Login</div>
+                    <Link to="/profile"><div className="btn btn-outline-white" >Login</div></Link>
                     <Link to="/signup"> <div className="btn btn-outline-white" >Sign Up</div> </Link> 
                 </div>
                 <div className="clearfix"></div>

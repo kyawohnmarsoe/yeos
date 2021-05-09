@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -16,21 +17,24 @@ const Home = () => {
         
         <div className="row py-3 two-steps" style={{fontSize: '13px'}}>
             <div className="col "> 
+            <Link to="/buy-to-join">
                 <div className="step-background text-center m-auto">
                 <div className="step-center">
                     <img src="assets/img/step1.png" alt="Step1" className="step-icon"/>
                     <div className="pt-1">Buy to Join </div>
                 </div>
                 </div>
-            
+            </Link>
             </div>
             <div className="col "> 
+            <Link to="/submit">
             <div className="step-background text-center m-auto">
                 <div className="step-center">
                     <img src="assets/img/step2.png" alt="Step1" className="step-icon"/>
                     <div className="pt-1">Submit Receipt </div>
                 </div>
             </div>
+            </Link>
             
         </div>
         </div>
@@ -68,13 +72,15 @@ const Home = () => {
                 </div>
                 
                 </div>
-
+                
                 <div className="landing-button text-center">
+                <Link to="/buy-to-join">
                 <button type="submit" className="btn btn-brown  signup-btn py-1 mx-2 my-2">
                     <img src="assets/img/step1.png" alt="" className="button-icon"/> Buy to Join</button>
+                </Link>
                 <p style={{fontFamily: 'MarkerFelt'}}> *AC Nielsen Market Track for ASD, Jun 2019</p>
                 </div>
-
+               
                 <img src="assets/img/Group18.png" alt="" className="yeo-no1 "/>
                 <img src="assets/img/section1-bg.png" alt="" className="yeo-girl2 d-none d-md-block"/>
                 <img src="assets/img/mobile-bg2.png" alt="" className="yeo-girl2 d-block d-md-none"/>
@@ -111,8 +117,10 @@ const Home = () => {
             </div>
 
                 <div className="landing-button2 text-center">
+                <Link to="/buy-to-join">
                 <button type="submit" className="btn btn-brown  signup-btn py-1 mx-2 my-2 ">
                     <img src="assets/img/step1.png" alt="" className="button-icon"/> Buy to Join</button>
+                </Link>
                 </div>
 
                 <img src="assets/img/SoyBeanDrink.png" alt="" className="yeo-soybean "/>

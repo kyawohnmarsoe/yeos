@@ -1,9 +1,9 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const SignUp = () => {
     const submitHandler=(e)=>{
         e.preventDefault()
-        console.log('ok')
     }
     return (
         <>
@@ -33,7 +33,7 @@ const SignUp = () => {
                         <div className="form-group row">
                         <label  className="col-sm-12 col-form-label"> 
                             <small>
-                            By participating in this Promotion, I hereby agree and accept the following <a href="terms-and-conditions.html">PROMOTION T&C</a> , <a href="terms-of-use.html">TERMS OF USE</a> , <a href="privacy-policy.html">PRIVACY POLICY</a> AND <a href="#">COOKIE POLICY</a>.
+                            By participating in this Promotion, I hereby agree and accept the following <a href="/terms-and-conditions">PROMOTION T&C</a> , <a href="#">TERMS OF USE</a> , <a href="#">PRIVACY POLICY</a> AND <a href="#">COOKIE POLICY</a>.
                         
                             </small>
                         </label>
@@ -46,7 +46,9 @@ const SignUp = () => {
                         </label>
                         </div>
                         <div className="form-group row text-center ">
-                        <button type="submit" className="btn btn-brown m-auto signup-btn py-1">Sign Up</button>
+                      
+                        <Link to="/profile" type="submit" className="btn btn-brown m-auto signup-btn py-1">Sign Up</Link>
+                       
                         </div>
                     </form>
                     </div>

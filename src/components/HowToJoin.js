@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const HowToJoin = () => {
     return (
         <>
@@ -21,12 +22,14 @@ const HowToJoin = () => {
                                 <div className="m-auto text-center py-2">Buy Yeo’s Product</div>
                             </div>
                             <div className="col-sm-4 "> 
+                          
                             <div className="step-background text-center m-auto">
                                 <div className="step-center">
                                     <img src="assets/img/step2.png" alt="Step1" className="step-icon"/>
                                     <div className="pt-1">Submit Receipt </div>
                                 </div>
                             </div>
+                            
                             <div className="m-auto text-center py-2">Submit the receipts</div>
                         </div>
 

@@ -3,12 +3,12 @@ import React from 'react'
 const Terms = () => {
     return (
         <>
-            <section class="body-wapper pb-5">
-                <div class="container">
-                    <div class=" pdrinks-wapper font-weight-bold text-center text-sm-left px-5">
-                        <h2 class="text-center mb-5">Terms & Conditions</h2>
+            <section className="body-wapper pb-5">
+                <div className="container">
+                    <div className=" pdrinks-wapper font-weight-bold text-center text-sm-left px-5">
+                        <h2 className="text-center mb-5">Terms & Conditions</h2>
                     
-                    <div class="tnc-wapper px-3">
+                    <div className="tnc-wapper px-3">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quod distinctio omnis optio atque quas ipsam quia id placeat animi obcaecati a mollitia, voluptatibus natus beatae repellat, aliquam ex ea.
                         A culpa hic aut consectetur aliquid deserunt repellat esse id enim iste facere quo labore inventore voluptas aperiam eos cupiditate, modi eum cumque, dolores magni, iure iusto doloremque. Ipsa, distinctio.
                         <br/>  <br/>
@@ -31,7 +31,7 @@ const Terms = () => {
                     </div>
                 </div>
                 </section>
-                <img src="assets/img/Background2.png" alt="" class="yeo-girl "/>
+                <img src="assets/img/Background2.png" alt="" className="yeo-girl "/>
         </>
     )
 }
